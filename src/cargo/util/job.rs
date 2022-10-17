@@ -21,7 +21,7 @@ pub fn setup() -> Option<Setup> {
     unsafe { imp::setup() }
 }
 
-#[cfg(unix)]
+#[cfg(all(unix, not(target_os = "redox")))]
 mod imp {
     use std::env;
 
@@ -35,6 +35,15 @@ mod imp {
         if env::var("__CARGO_TEST_SETSID_PLEASE_DONT_USE_ELSEWHERE").is_ok() {
             libc::setsid();
         }
+        Some(())
+    }
+}
+
+#[cfg(target_os = "redox")]
+mod imp {
+    pub type Setup = ();
+
+    pub unsafe fn setup() -> Option<()> {
         Some(())
     }
 }
