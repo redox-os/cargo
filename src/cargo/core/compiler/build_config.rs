@@ -74,8 +74,7 @@ impl BuildConfig {
         let jobs = match jobs.or(cfg.jobs) {
             Some(j) => j,
             None => available_parallelism()
-                .context("failed to determine the amount of parallelism available")?
-                .get() as u32,
+                .map_or(1, |x| x.get() as u32)
         };
         if jobs == 0 {
             anyhow::bail!("jobs may not be 0");
