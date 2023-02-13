@@ -48,9 +48,7 @@ pub struct BuildConfig {
 }
 
 fn default_parallelism() -> CargoResult<u32> {
-    Ok(available_parallelism()
-        .context("failed to determine the amount of parallelism available")?
-        .get() as u32)
+    Ok(available_parallelism().map_or(1, |x| x.get() as u32))
 }
 
 impl BuildConfig {
