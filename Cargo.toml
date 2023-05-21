@@ -127,5 +127,5 @@ pretty-env-logger = ["pretty_env_logger"]
 [patch.crates-io]
 git2 = { git = "https://gitlab.redox-os.org/redox-os/git2-rs.git", branch = "redox-0.14.4" }
 jobserver = { git = "https://gitlab.redox-os.org/redox-os/jobserver-rs.git", branch = "redox-0.1.25" }
-libc = { git = "https://gitlab.redox-os.org/redox-os/liblibc.git", branch = "redox-0.2.135" }
+libc = { git = "https://gitlab.redox-os.org/redox-os/liblibc.git", branch = "redox_0.2.138" }
 libgit2-sys = { git = "https://gitlab.redox-os.org/redox-os/git2-rs.git", branch = "redox-0.14.4" }
