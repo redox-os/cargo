@@ -285,3 +285,7 @@ http-transport-reqwest = ["gix/blocking-http-transport-reqwest"]
 
 [lints]
 workspace = true
+
+[patch.crates-io]
+# FIXME(andypython): remove when https://github.com/servo/rust-url/pull/1095 has been merged
+url = { git = "https://github.com/Andy-Python-Programmer/rust-url/" }
