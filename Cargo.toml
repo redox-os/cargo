@@ -289,3 +289,5 @@ workspace = true
 [patch.crates-io]
 # FIXME(andypython): remove when https://github.com/servo/rust-url/pull/1095 has been merged
 url = { git = "https://github.com/Andy-Python-Programmer/rust-url/" }
+form_urlencoded = { git = "https://github.com/Andy-Python-Programmer/rust-url/" }
+percent-encoding = { git = "https://github.com/Andy-Python-Programmer/rust-url/" }
