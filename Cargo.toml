@@ -291,3 +291,5 @@ workspace = true
 url = { git = "https://github.com/Andy-Python-Programmer/rust-url/" }
 form_urlencoded = { git = "https://github.com/Andy-Python-Programmer/rust-url/" }
 percent-encoding = { git = "https://github.com/Andy-Python-Programmer/rust-url/" }
+# TODO(willnode): maybe just let libz also build statically
+libz-sys = { git = "https://github.com/willnode/libz-sys", branch = "servo" }
