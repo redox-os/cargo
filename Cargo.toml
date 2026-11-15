@@ -302,3 +302,6 @@ http-transport-reqwest = ["gix/blocking-http-transport-reqwest"]
 
 [lints]
 workspace = true
+
+[patch.crates-io]
+libc = { git = "https://gitlab.redox-os.org/redox-os/liblibc", branch = "redox-0.2.186" }

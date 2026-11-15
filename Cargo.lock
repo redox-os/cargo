@@ -3095,8 +3095,7 @@ checksum = "09edd9e8b54e49e587e4f6295a7d29c3ea94d469cb40ab8ca70b288248a81db2"
 [[package]]
 name = "libc"
 version = "0.2.186"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "68ab91017fe16c622486840e4c83c9a37afeff978bd239b5293d61ece587de66"
+source = "git+https://gitlab.redox-os.org/redox-os/liblibc?branch=redox-0.2.186#0a561a02548000dddc1d9da5d0979046e60e402d"
 
 [[package]]
 name = "libgit2-sys"
